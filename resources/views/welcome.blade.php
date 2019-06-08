@@ -110,25 +110,25 @@
                 <nav class="level">
                         <div class="level-item has-text-centered">
                           <div>
-                            <p class="heading">Tweets</p>
-                            <p class="title is-2">3,456</p>
+                            <p class="heading">Faclities</p>
+                            <p class="title is-2">345</p>
                           </div>
                         </div>
                         <div class="level-item has-text-centered">
                           <div>
-                            <p class="heading">Following</p>
+                            <p class="heading">Journals</p>
                             <p class="title is-2">123</p>
                           </div>
                         </div>
                         <div class="level-item has-text-centered">
                           <div>
-                            <p class="heading">Followers</p>
-                            <p class="title is-2">456K</p>
+                            <p class="heading">Books</p>
+                            <p class="title is-2">456</p>
                           </div>
                         </div>
                         <div class="level-item has-text-centered">
                           <div>
-                            <p class="heading">Likes</p>
+                            <p class="heading">Research Repository</p>
                             <p class="title is-2">789</p>
                           </div>
                         </div>
