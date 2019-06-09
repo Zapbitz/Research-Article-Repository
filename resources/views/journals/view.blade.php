@@ -13,7 +13,7 @@
 
                 <div class="card-content ">
 
-                    <form class="form" method="POST" action="/journals">
+                    <form class="form" method="POST" action="/journals" enctype="multipart/form-data">
                         {{ csrf_field() }}
 
                         <div class="field is-horizontal">
@@ -60,7 +60,7 @@
                                 <div class="field">
                                     <div class="control">
                                         <div class="select is-dark">
-                                            <select>
+                                            <select name="journal_cat">
                                                 <option value="journal">Journal</option>
                                                 <option vlaue="cp">Conference Proceeding</option>
                                                 <option vlaue="newsletter">Newsletter</option>
@@ -83,6 +83,25 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="field is-horizontal">
+                                        <div class="field-label">
+                                            <label class="label">Category</label>
+                                        </div>
+            
+                                        <div class="field-body">
+                                            <div class="field">
+                                                <div class="control">
+                                                    <div class="select is-dark">
+                                                        <select name="category">
+                                                            <option value="national">National</option>
+                                                            <option vlaue="inter_national">Inter National</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+            
+                                            </div>
+                                        </div>
+                                </div>
                             </div>
 
                         </div>
@@ -93,16 +112,16 @@
                             <div class="field-body">
                                 <div class="field is-grouped">
                                     <div class="control">
-                                        <input class="input is-dark" id="auther1" type="text" name="auther[]">
+                                        <input class="input is-dark" id="author1" type="text" name="author[]">
                                     </div>
                                     <div class="control">
-                                        <input class="input is-dark" id="auther2" type="text" name="auther[]">
+                                        <input class="input is-dark" id="author2" type="text" name="author[]">
                                     </div>
                                     <div class="control">
-                                        <input class="input is-dark" id="auther3" type="text" name="auther[]">
+                                        <input class="input is-dark" id="author3" type="text" name="author[]">
                                     </div>
                                     <div class="control">
-                                        <input class="input is-dark" id="auther4" type="text" name="auther[]">
+                                        <input class="input is-dark" id="author4" type="text" name="author[]">
                                     </div>
                                 </div>
 
@@ -112,7 +131,7 @@
                        
                         <div class="field is-horizontal">
                             <div class="field-label">
-                                <label class="label">Bibilography</label>
+                                <label class="label">Bibliography</label>
                             </div>
                             <div class="field-body">
                                 <div class="field is-grouped">
@@ -139,13 +158,13 @@
                             <div class="field-body">
                                 <div class="field is-grouped">
                                     <div class="control">
-                                        <input class="input is-dark" id="issn_isbn_no" type="text" name="issn_isbn_no" placeholder="">
+                                        <input class="input is-dark" id="url" type="text" name="url" placeholder="">
                                     </div>
                                     <div class="control">
                                             <div class="field">
-                                                    <div class="file is-right is-info">
-                                                      <label class="file-label">
-                                                        <input class="file-input" type="file" name="resume">
+                                                    <div class="file is-right is-info ">
+                                                      <label class="file-label ">
+                                                        <input class="file-input " type="file" name="upload">
                                                         <span class="file-cta">
                                                           <span class="file-icon">
                                                             <i class="fas fa-upload"></i>
@@ -161,13 +180,16 @@
                                                     </div>
                                                   </div>
                                     </div>
+                                    <div class="control">
+                                            <input type="date" data-display-mode="inline" data-is-range="true" data-close-on-select="false" name="publish_date" required>
+                                    </div>
 
                                 </div>
 
 
                             </div>
                         </div>
-
+                       
                         <div class="field is-grouped">
                                 <p class="control">
                                   <button type="submit" class="button is-link">

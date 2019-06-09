@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('fac_id')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('department_id');
             $table->rememberToken();
             $table->timestamps();
         });

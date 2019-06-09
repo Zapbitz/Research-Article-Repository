@@ -67,5 +67,10 @@
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}"></script>
+        <script type="text/javascript">
+            var date = new bulmaCalendar(document.querySelector('.calendar'), {
+              dataFormat: 'd MM yyyy' // 1 January 2018
+            });
+    </script>
     </body>
 </html>
