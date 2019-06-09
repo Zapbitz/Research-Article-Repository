@@ -12,6 +12,8 @@
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="~bulma-calendar/dist/css/bulma-calendar.min.css" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     </head>
     <body>
         <div id="app">

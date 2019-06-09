@@ -19,5 +19,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('/journals', 'JournalController');
+Route::resource('/books', 'BookController');
+Route::resource('/projects', 'ResearchProjectController');
+Route::resource('/departments', 'DepartmentController');
+Route::resource('/indexing', 'IndexingTypeController');
+
 
 
