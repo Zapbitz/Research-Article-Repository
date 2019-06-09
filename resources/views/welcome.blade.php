@@ -86,7 +86,45 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="/">
+                        <img src="{{asset('assets/images/kjc-logo-dark.png')}}">
+                    </a>
+                </div>
+
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                            <a class="button orange">
+                                <strong>Sign up</strong>
+                            </a>
+                            <a class="button is-light">
+                                Log in
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="header">
+            <div class="container">
+                <div class="header-content">
+                    <h2>Research Article Repository</h2>
+                    <p>Search 1000+ Papers, Books and Reports</p>
+                    <div class="counter-wrapper">
+                        <div class="counter"><h3>Faculties</h3> <b>25</b></div>
+                        <div class="counter"><h3>Journals</h3> <b>124</b></div>
+                        <div class="counter"><h3>Books</h3><b>45</b></div>
+                        <div class="counter"><h3>Research Papers</h3> <b>498</b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @if (Auth::check())
@@ -97,63 +135,6 @@
                     @endif
                 </div>
             @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    {{-- <figure class="image is-128x128">
-                        <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
-                    </figure> --}}
-                    <p class="title is-2">Research Article Repository</p>
-                    <p class="versioninfo">Search 10,000+ Papers, Books and Reports</p>
-                </div>
-
-                <nav class="level">
-                        <div class="level-item has-text-centered">
-                          <div>
-                            <p class="heading">Faclities</p>
-                            <p class="title is-2">345</p>
-                          </div>
-                        </div>
-                        <div class="level-item has-text-centered">
-                          <div>
-                            <p class="heading">Journals</p>
-                            <p class="title is-2">123</p>
-                          </div>
-                        </div>
-                        <div class="level-item has-text-centered">
-                          <div>
-                            <p class="heading">Books</p>
-                            <p class="title is-2">456</p>
-                          </div>
-                        </div>
-                        <div class="level-item has-text-centered">
-                          <div>
-                            <p class="heading">Research Repository</p>
-                            <p class="title is-2">789</p>
-                          </div>
-                        </div>
-                      </nav>
-                {{-- <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div> --}}
-
-                {{-- <div class="foundation_button_test">
-                    <p class="framwork_title">Bulma v0.7.4</p>
-                    <p class="framwork_title">Bulma Extension v4.0.2</p>
-
-                    <div class="block">
-                        <a class="button is-primary">Primary</a>
-                        <a class="button is-info">Info</a>
-                        <a class="button is-success">Success</a>
-                        <a class="button is-warning">Warning</a>
-                        <a class="button is-danger">Danger</a>
-                    </div>
-                </div> --}}
-            </div>
-        </div>
+        </div> -->
     </body>
 </html>

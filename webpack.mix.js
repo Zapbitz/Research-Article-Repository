@@ -12,4 +12,16 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+    .sass('resources/sass/app.scss', 'public/css')
+    .webpackConfig({
+        module: {
+            rules: [
+             // your rules may go here
+            // next rules are just example, you can modify them according to your needs
+              {
+                test: /\.(woff|woff2|eot|ttf|svg)(\?.*$|$)/,
+                loader: 'file-loader?name=[name].[ext]'
+              }
+            ]
+         }
+    });

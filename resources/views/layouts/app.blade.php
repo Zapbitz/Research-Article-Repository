@@ -17,7 +17,7 @@
     </head>
     <body>
         <div id="app">
-            <nav class="navbar has-shadow">
+            <!-- <nav class="navbar has-shadow">
                 <div class="container">
                     <div class="navbar-brand">
                         <a href="{{ url('/') }}" class="navbar-item">{{ config('app.name', 'Laravel') }}</a>
@@ -58,6 +58,30 @@
                                     </div>
                                 </div>
                             @endif
+                        </div>
+                    </div>
+                </div>
+            </nav> -->
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a href="/">
+                            <img src="{{asset('assets/images/kjc-logo-dark.png')}}">
+                        </a>
+                    </div>
+
+                    <div id="navbarBasicExample" class="navbar-menu">
+                        <div class="navbar-end">
+                            <div class="navbar-item">
+                                <div class="buttons">
+                                <a class="button orange">
+                                    <strong>Sign up</strong>
+                                </a>
+                                <a class="button is-light">
+                                    Log in
+                                </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
