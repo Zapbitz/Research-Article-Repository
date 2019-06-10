@@ -8,11 +8,11 @@
                 <div class="form-head">
                     <div class="form-icon"></div>
                     <div class="form-name">
-                        <h2>Journal Registration</h2>
+                        <h2>Book Registration</h2>
                     </div>
                 </div>
                 <div class="form-body">
-                    <form action="/journals" method="POST" enctype="multipart/form-data">
+                    <form action="/books" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="field is-horizontal">
                             <div class="field-label">
@@ -38,17 +38,16 @@
                         {{-- <input type="date" data-display-mode="inline" data-is-range="true" data-close-on-select="false"> --}}
                         <div class="field is-horizontal">
                             <div class="field-label">
-                                <label class="label">Journal Category</label>
+                                <label class="label">Book Category</label>
                             </div>
 
                             <div class="field-body">
                                 <div class="field">
                                     <div class="control">
                                         <div class="select is-dark">
-                                            <select name="journal_cat" v-model="cat">
-                                                <option value="journal" selected>Journal</option>
-                                                <option vlaue="cp">Conference Proceeding</option>
-                                                <option vlaue="newsletter">Newsletter</option>
+                                            <select name="book_cat" >
+                                                <option value="journal" selected>Book</option>
+                                                <option vlaue="cp">chapter</option>
                                             </select>
                                         </div>
                                     </div>
@@ -70,17 +69,14 @@
                                 </div>
                                 <div class="field is-horizontal">
                                     <div class="field-label">
-                                        <label class="label">Category</label>
+                                        <label class="label">Publish Details</label>
                                     </div>
 
                                     <div class="field-body">
                                         <div class="field">
                                             <div class="control">
                                                 <div class="select is-dark">
-                                                    <select name="category">
-                                                        <option value="national">National</option>
-                                                        <option vlaue="inter_national">Inter National</option>
-                                                    </select>
+                                                        <input class="input is-dark" id="publish_detail" type="text" name="publish_detail">
                                                 </div>
                                             </div>
 
@@ -175,7 +171,7 @@
 
                             </div>
                         </div>
-                        <div class="field is-horizontal" v-show="cat === 'journal'">
+                        {{-- <div class="field is-horizontal" v-show="cat === 'journal'">
                             <div class="field-label">
                                 <label class="label">Impact Factor</label>
                             </div>
@@ -188,7 +184,7 @@
 
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
 
                         <div class="field is-grouped">
                             <p class="control">

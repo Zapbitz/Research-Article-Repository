@@ -73,7 +73,7 @@
                         <div class="field-body">
                             <div class="field">
                                 <p class="control">
-                                    <div class="select">
+                                    <div class="select is-dark">
                                         <select name="department_id">
                                             @foreach ($departments as $department)
                                                 <option value="{{$department->id}}">{{$department->name}}</option>

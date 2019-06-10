@@ -2,21 +2,25 @@
 
 @-webkit-keyframes spinAround {
   from {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 
   to {
-    transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
   }
 }
 
 @keyframes spinAround {
   from {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 
   to {
-    transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
   }
 }
 
@@ -51,8 +55,10 @@
   pointer-events: none;
   position: absolute;
   top: 50%;
-  transform: rotate(-45deg);
-  transform-origin: center;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
   width: 0.625em;
 }
 
@@ -108,8 +114,10 @@
   left: 50%;
   position: absolute;
   top: 50%;
-  transform: translateX(-50%) translateY(-50%) rotate(45deg);
-  transform-origin: center center;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+          transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
 }
 
 .delete::before,
@@ -4323,8 +4331,10 @@ fieldset[disabled] .button {
   left: 50%;
   position: absolute;
   top: 50%;
-  transform: translateX(-50%) translateY(-50%) rotate(45deg);
-  transform-origin: center center;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+          transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
 }
 
 .tag:not(body).is-delete::before {
@@ -5170,7 +5180,8 @@ fieldset[disabled] .select select:hover {
   position: absolute;
   right: 0.625em;
   top: 0.625em;
-  transform: none;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .select.is-loading.is-small:after {
@@ -7617,9 +7628,12 @@ body.has-navbar-fixed-bottom {
   height: 1px;
   left: calc(50% - 8px);
   position: absolute;
-  transform-origin: center;
+  -webkit-transform-origin: center;
+          transform-origin: center;
   transition-duration: 86ms;
+  transition-property: background-color, opacity, -webkit-transform;
   transition-property: background-color, opacity, transform;
+  transition-property: background-color, opacity, transform, -webkit-transform;
   transition-timing-function: ease-out;
   width: 16px;
 }
@@ -7641,7 +7655,8 @@ body.has-navbar-fixed-bottom {
 }
 
 .navbar-burger.is-active span:nth-child(1) {
-  transform: translateY(5px) rotate(45deg);
+  -webkit-transform: translateY(5px) rotate(45deg);
+          transform: translateY(5px) rotate(45deg);
 }
 
 .navbar-burger.is-active span:nth-child(2) {
@@ -7649,7 +7664,8 @@ body.has-navbar-fixed-bottom {
 }
 
 .navbar-burger.is-active span:nth-child(3) {
-  transform: translateY(-5px) rotate(-45deg);
+  -webkit-transform: translateY(-5px) rotate(-45deg);
+          transform: translateY(-5px) rotate(-45deg);
 }
 
 .navbar-menu {
@@ -7898,7 +7914,8 @@ a.navbar-item.is-active,
   }
 
   .navbar-item.has-dropdown-up .navbar-link::after {
-    transform: rotate(135deg) translate(0.25em, -0.25em);
+    -webkit-transform: rotate(135deg) translate(0.25em, -0.25em);
+            transform: rotate(135deg) translate(0.25em, -0.25em);
   }
 
   .navbar-item.has-dropdown-up .navbar-dropdown {
@@ -7927,7 +7944,8 @@ a.navbar-item.is-active,
   .navbar-item.is-hoverable:hover .navbar-dropdown.is-boxed {
     opacity: 1;
     pointer-events: auto;
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 
   .navbar-menu {
@@ -7989,9 +8007,12 @@ a.navbar-item.is-active,
     opacity: 0;
     pointer-events: none;
     top: calc(100% + (-4px));
-    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
     transition-duration: 86ms;
+    transition-property: opacity, -webkit-transform;
     transition-property: opacity, transform;
+    transition-property: opacity, transform, -webkit-transform;
   }
 
   .navbar-dropdown.is-right {
@@ -11646,7 +11667,8 @@ label.panel-block:hover {
   min-width: 100%;
   position: absolute;
   top: 50%;
-  transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
 }
 
 .hero-video.is-transparent {
@@ -11721,11 +11743,13 @@ label.panel-block:hover {
 
 @keyframes spinAround {
   from {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 
   to {
-    transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
   }
 }
 
@@ -11760,8 +11784,10 @@ label.panel-block:hover {
   pointer-events: none;
   position: absolute;
   top: 50%;
-  transform: rotate(-45deg);
-  transform-origin: center;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
   width: 0.625em;
 }
 
@@ -11817,8 +11843,10 @@ label.panel-block:hover {
   left: 50%;
   position: absolute;
   top: 50%;
-  transform: translateX(-50%) translateY(-50%) rotate(45deg);
-  transform-origin: center center;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+          transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
 }
 
 .delete::before,
@@ -16022,8 +16050,10 @@ fieldset[disabled] .button {
   left: 50%;
   position: absolute;
   top: 50%;
-  transform: translateX(-50%) translateY(-50%) rotate(45deg);
-  transform-origin: center center;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+          transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
 }
 
 .tag:not(body).is-delete::before {
@@ -17816,9 +17846,12 @@ body.has-navbar-fixed-bottom {
   height: 1px;
   left: calc(50% - 8px);
   position: absolute;
-  transform-origin: center;
+  -webkit-transform-origin: center;
+          transform-origin: center;
   transition-duration: 86ms;
+  transition-property: background-color, opacity, -webkit-transform;
   transition-property: background-color, opacity, transform;
+  transition-property: background-color, opacity, transform, -webkit-transform;
   transition-timing-function: ease-out;
   width: 16px;
 }
@@ -17840,7 +17873,8 @@ body.has-navbar-fixed-bottom {
 }
 
 .navbar-burger.is-active span:nth-child(1) {
-  transform: translateY(5px) rotate(45deg);
+  -webkit-transform: translateY(5px) rotate(45deg);
+          transform: translateY(5px) rotate(45deg);
 }
 
 .navbar-burger.is-active span:nth-child(2) {
@@ -17848,7 +17882,8 @@ body.has-navbar-fixed-bottom {
 }
 
 .navbar-burger.is-active span:nth-child(3) {
-  transform: translateY(-5px) rotate(-45deg);
+  -webkit-transform: translateY(-5px) rotate(-45deg);
+          transform: translateY(-5px) rotate(-45deg);
 }
 
 .navbar-menu {
@@ -18097,7 +18132,8 @@ a.navbar-item.is-active,
   }
 
   .navbar-item.has-dropdown-up .navbar-link::after {
-    transform: rotate(135deg) translate(0.25em, -0.25em);
+    -webkit-transform: rotate(135deg) translate(0.25em, -0.25em);
+            transform: rotate(135deg) translate(0.25em, -0.25em);
   }
 
   .navbar-item.has-dropdown-up .navbar-dropdown {
@@ -18126,7 +18162,8 @@ a.navbar-item.is-active,
   .navbar-item.is-hoverable:hover .navbar-dropdown.is-boxed {
     opacity: 1;
     pointer-events: auto;
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 
   .navbar-menu {
@@ -18188,9 +18225,12 @@ a.navbar-item.is-active,
     opacity: 0;
     pointer-events: none;
     top: calc(100% + (-4px));
-    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
     transition-duration: 86ms;
+    transition-property: opacity, -webkit-transform;
     transition-property: opacity, transform;
+    transition-property: opacity, transform, -webkit-transform;
   }
 
   .navbar-dropdown.is-right {
@@ -21845,7 +21885,8 @@ label.panel-block:hover {
   min-width: 100%;
   position: absolute;
   top: 50%;
-  transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
 }
 
 .hero-video.is-transparent {
@@ -23993,7 +24034,8 @@ label.panel-block:hover {
   margin: 0;
   padding: 0;
   left: -100%;
-  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .carousel .carousel-container .carousel-item {
@@ -24042,7 +24084,8 @@ label.panel-block:hover {
 
 .carousel .carousel-navigation.is-overlay {
   top: 50%;
-  transform: perspective(1px) translateY(-50%);
+  -webkit-transform: perspective(1px) translateY(-50%);
+          transform: perspective(1px) translateY(-50%);
   bottom: auto;
   left: auto;
   right: auto;
@@ -24075,7 +24118,8 @@ label.panel-block:hover {
 }
 
 .carousel.is-reversing .carousel-container {
-  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .carousel[data-size]:not(.carousel-animate-fade) .carousel-container .carousel-item {
@@ -24123,7 +24167,8 @@ label.panel-block:hover {
   margin: 0;
   padding: 0;
   left: -100%;
-  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .hero-carousel .carousel-container .carousel-item {
@@ -24172,7 +24217,8 @@ label.panel-block:hover {
 
 .hero-carousel .carousel-navigation.is-overlay {
   top: 50%;
-  transform: perspective(1px) translateY(-50%);
+  -webkit-transform: perspective(1px) translateY(-50%);
+          transform: perspective(1px) translateY(-50%);
   bottom: auto;
   left: auto;
   right: auto;
@@ -24205,13 +24251,17 @@ label.panel-block:hover {
 }
 
 .hero-carousel.is-reversing .carousel-container {
-  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .carousel.carousel-animate-slide.carousel-animated .carousel-container,
 .hero-carousel.carousel-animate-slide.carousel-animated .carousel-container {
-  transform: none !important;
+  -webkit-transform: none !important;
+          transform: none !important;
+  transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .carousel.carousel-animate-fade .carousel-item,
@@ -24434,7 +24484,8 @@ label.panel-block:hover {
 .is-checkradio[type="checkbox"] + label::after,
 .is-checkradio[type="checkbox"] + label:after {
   box-sizing: border-box;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   border-width: .1rem;
   border-style: solid;
   border-color: #00d1b2;
@@ -24984,7 +25035,8 @@ label.panel-block:hover {
 .is-checkradio[type="checkbox"]:indeterminate + label::after,
 .is-checkradio[type="checkbox"]:indeterminate + label:after {
   display: inline-block;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
   border-bottom: none;
 }
 
@@ -25048,7 +25100,8 @@ label.panel-block:hover {
   border-radius: 50%;
   background: #00d1b2;
   left: 0;
-  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
 }
 
 .is-checkradio[type="radio"]:checked.has-background-color + label::before,
@@ -25453,6 +25506,7 @@ label.panel-block:hover {
   display: inline-block;
   font-size: 0.75rem;
   padding: .4rem .8rem;
+  -webkit-transform: translateY(-1.1rem);
   transform: translateY(-1.1rem);
   text-align: center;
 }
@@ -25478,6 +25532,7 @@ label.panel-block:hover {
     left: 50%;
     position: absolute;
     top: 1rem;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 
@@ -25486,6 +25541,7 @@ label.panel-block:hover {
     left: 50%;
     top: 50%;
     padding: .1rem;
+    -webkit-transform: translateY(-50%) translateX(-50%);
     transform: translateY(-50%) translateX(-50%);
   }
 }
@@ -25920,7 +25976,7 @@ label.panel-block:hover {
   background: #00d1b2;
   background: #00d1b2;
   z-index: 999998;
-  transition: transform .35s ease-out;
+  transition: transform .35s ease-out,-webkit-transform .35s ease-out;
   will-change: transform;
 }
 
@@ -26076,24 +26132,29 @@ label.panel-block:hover {
 
 .pageloader:not(.is-left-to-right),
 .pageloader:not(.is-right-to-left) {
+  -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
 }
 
 .pageloader.is-left-to-right {
+  -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
 }
 
 .pageloader.is-right-to-left {
+  -webkit-transform: translateX(100%);
   transform: translateX(100%);
 }
 
 .pageloader.is-active:not(.is-left-to-right),
 .pageloader.is-active:not(.is-right-to-left) {
+  -webkit-transform: translateY(0);
   transform: translateY(0);
 }
 
 .pageloader.is-active.is-left-to-right,
 .pageloader.is-active.is-right-to-left {
+  -webkit-transform: translateX(0);
   transform: translateX(0);
 }
 
@@ -26105,6 +26166,7 @@ label.panel-block:hover {
   border-radius: 100%;
   content: '';
   z-index: 9999;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 0;
   height: 0;
@@ -26118,6 +26180,7 @@ label.panel-block:hover {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   margin: 2em 0 0 0;
   font-size: 0.875em;
@@ -26843,7 +26906,8 @@ label.panel-block:hover {
 
 .pricing-table .pricing-plan.is-active {
   box-shadow: 0 8px 12px 0 rgba(122, 122, 122, 0.2);
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .pricing-table .pricing-plan.is-active .plan-price .plan-price-amount {
@@ -27336,11 +27400,13 @@ label.panel-block:hover {
   top: 0;
   bottom: 0;
   z-index: 35;
-  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
   transition: .3s ease;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  perspective: 1000;
+  -webkit-perspective: 1000;
+          perspective: 1000;
   will-change: transform;
 }
 
@@ -27837,7 +27903,9 @@ input[type=range].slider::-webkit-slider-thumb {
   background: white;
   cursor: pointer;
   -webkit-appearance: none;
+  transition: transform .2s ease, -webkit-transform .2s ease;
   transition: transform .2s ease;
+  transition: -webkit-transform .2s ease;
 }
 
 input[type=range].slider::-moz-range-thumb {
@@ -27846,7 +27914,9 @@ input[type=range].slider::-moz-range-thumb {
   background: white;
   border-radius: 4px;
   cursor: pointer;
+  transition: transform .2s ease, -webkit-transform .2s ease;
   transition: transform .2s ease;
+  transition: -webkit-transform .2s ease;
 }
 
 input[type=range].slider::-ms-thumb {
@@ -27855,7 +27925,9 @@ input[type=range].slider::-ms-thumb {
   background: white;
   border-radius: 4px;
   cursor: pointer;
+  transition: transform .2s ease, -webkit-transform .2s ease;
   transition: transform .2s ease;
+  transition: -webkit-transform .2s ease;
 }
 
 input[type=range].slider::-webkit-slider-thumb {
@@ -27875,6 +27947,7 @@ input[type=range].slider.is-circle::-ms-thumb {
 }
 
 input[type=range].slider:active::-webkit-slider-thumb {
+  -webkit-transform: scale(1.25);
   transform: scale(1.25);
 }
 
@@ -27893,6 +27966,7 @@ input[type=range].slider:disabled {
 
 input[type=range].slider:disabled::-webkit-slider-thumb {
   cursor: not-allowed;
+  -webkit-transform: scale(1);
   transform: scale(1);
 }
 
@@ -28880,7 +28954,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   left: 0.25rem;
   width: 1rem;
   height: 1rem;
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   border-radius: 4px;
   background: white;
   transition: all 0.25s ease-out;
@@ -28994,7 +29069,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   left: 0.25rem;
   width: 0.625rem;
   height: 0.625rem;
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   border-radius: 4px;
   background: white;
   transition: all 0.25s ease-out;
@@ -29108,7 +29184,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   left: 0.25rem;
   width: 1.375rem;
   height: 1.375rem;
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   border-radius: 4px;
   background: white;
   transition: all 0.25s ease-out;
@@ -29222,7 +29299,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   left: 0.25rem;
   width: 1.75rem;
   height: 1.75rem;
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   border-radius: 4px;
   background: white;
   transition: all 0.25s ease-out;
@@ -30499,7 +30577,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 .tooltip:focus::before,
 .tooltip:hover::before,
 .tooltip.is-tooltip-active::before {
-  transform: translate(-50%, -0.5rem);
+  -webkit-transform: translate(-50%, -0.5rem);
+          transform: translate(-50%, -0.5rem);
 }
 
 .tooltip.is-tooltip-right::before {
@@ -30507,7 +30586,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   bottom: 50%;
   left: 100%;
   right: auto;
-  transform: translate(-1rem, 50%);
+  -webkit-transform: translate(-1rem, 50%);
+          transform: translate(-1rem, 50%);
 }
 
 .tooltip.is-tooltip-right:focus:not(.is-loading)::after,
@@ -30522,7 +30602,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 .tooltip.is-tooltip-right:focus::before,
 .tooltip.is-tooltip-right:hover::before,
 .tooltip.is-tooltip-right.is-tooltip-active::before {
-  transform: translate(0.5rem, 50%);
+  -webkit-transform: translate(0.5rem, 50%);
+          transform: translate(0.5rem, 50%);
 }
 
 .tooltip.is-tooltip-bottom::before {
@@ -30530,7 +30611,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   bottom: auto;
   left: 50%;
   right: auto;
-  transform: translate(-50%, -1rem);
+  -webkit-transform: translate(-50%, -1rem);
+          transform: translate(-50%, -1rem);
 }
 
 .tooltip.is-tooltip-bottom:focus:not(.is-loading)::after,
@@ -30546,7 +30628,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 .tooltip.is-tooltip-bottom:focus::before,
 .tooltip.is-tooltip-bottom:hover::before,
 .tooltip.is-tooltip-bottom.is-tooltip-active::before {
-  transform: translate(-50%, 0.5rem);
+  -webkit-transform: translate(-50%, 0.5rem);
+          transform: translate(-50%, 0.5rem);
 }
 
 .tooltip.is-tooltip-left::before {
@@ -30554,7 +30637,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   bottom: 50%;
   left: auto;
   right: 100%;
-  transform: translate(1rem, 50%);
+  -webkit-transform: translate(1rem, 50%);
+          transform: translate(1rem, 50%);
 }
 
 .tooltip.is-tooltip-left:focus:not(.is-loading)::after,
@@ -30570,7 +30654,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 .tooltip.is-tooltip-left:focus::before,
 .tooltip.is-tooltip-left:hover::before,
 .tooltip.is-tooltip-left.is-tooltip-active::before {
-  transform: translate(-0.5rem, 50%);
+  -webkit-transform: translate(-0.5rem, 50%);
+          transform: translate(-0.5rem, 50%);
 }
 
 .tooltip.is-tooltip-multiline::before {
@@ -30811,7 +30896,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-top-mobile:focus::before,
   .is-tooltip-top-mobile:hover::before,
   .is-tooltip-top-mobile.is-tooltip-active::before {
-    transform: translate(-50%, -0.5rem) !important;
+    -webkit-transform: translate(-50%, -0.5rem) !important;
+            transform: translate(-50%, -0.5rem) !important;
   }
 }
 
@@ -30836,7 +30922,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-top-tablet:focus::before,
   .is-tooltip-top-tablet:hover::before,
   .is-tooltip-top-tablet.is-tooltip-active::before {
-    transform: translate(-50%, -0.5rem) !important;
+    -webkit-transform: translate(-50%, -0.5rem) !important;
+            transform: translate(-50%, -0.5rem) !important;
   }
 }
 
@@ -30861,7 +30948,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-top-tablet-only:focus::before,
   .is-tooltip-top-tablet-only:hover::before,
   .is-tooltip-top-tablet-only.is-tooltip-active::before {
-    transform: translate(-50%, -0.5rem) !important;
+    -webkit-transform: translate(-50%, -0.5rem) !important;
+            transform: translate(-50%, -0.5rem) !important;
   }
 }
 
@@ -30886,7 +30974,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-top-touch:focus::before,
   .is-tooltip-top-touch:hover::before,
   .is-tooltip-top-touch.is-tooltip-active::before {
-    transform: translate(-50%, -0.5rem) !important;
+    -webkit-transform: translate(-50%, -0.5rem) !important;
+            transform: translate(-50%, -0.5rem) !important;
   }
 }
 
@@ -30911,7 +31000,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-top-desktop:focus::before,
   .is-tooltip-top-desktop:hover::before,
   .is-tooltip-top-desktop.is-tooltip-active::before {
-    transform: translate(-50%, -0.5rem) !important;
+    -webkit-transform: translate(-50%, -0.5rem) !important;
+            transform: translate(-50%, -0.5rem) !important;
   }
 }
 
@@ -30936,7 +31026,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-top-desktop-only:focus::before,
   .is-tooltip-top-desktop-only:hover::before,
   .is-tooltip-top-desktop-only.is-tooltip-active::before {
-    transform: translate(-50%, -0.5rem) !important;
+    -webkit-transform: translate(-50%, -0.5rem) !important;
+            transform: translate(-50%, -0.5rem) !important;
   }
 }
 
@@ -30961,7 +31052,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-top-widescreen:focus::before,
   .is-tooltip-top-widescreen:hover::before,
   .is-tooltip-top-widescreen.is-tooltip-active::before {
-    transform: translate(-50%, -0.5rem) !important;
+    -webkit-transform: translate(-50%, -0.5rem) !important;
+            transform: translate(-50%, -0.5rem) !important;
   }
 }
 
@@ -30986,7 +31078,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-top-widescreen-only:focus::before,
   .is-tooltip-top-widescreen-only:hover::before,
   .is-tooltip-top-widescreen-only.is-tooltip-active::before {
-    transform: translate(-50%, -0.5rem) !important;
+    -webkit-transform: translate(-50%, -0.5rem) !important;
+            transform: translate(-50%, -0.5rem) !important;
   }
 }
 
@@ -31011,7 +31104,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-top-fullhd:focus::before,
   .is-tooltip-top-fullhd:hover::before,
   .is-tooltip-top-fullhd.is-tooltip-active::before {
-    transform: translate(-50%, -0.5rem) !important;
+    -webkit-transform: translate(-50%, -0.5rem) !important;
+            transform: translate(-50%, -0.5rem) !important;
   }
 }
 
@@ -31021,7 +31115,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: 50% !important;
     left: 100% !important;
     right: auto !important;
-    transform: translate(-1rem, 50%) !important;
+    -webkit-transform: translate(-1rem, 50%) !important;
+            transform: translate(-1rem, 50%) !important;
   }
 
   .is-tooltip-right-mobile:focus:not(.is-loading)::after,
@@ -31036,7 +31131,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-right-mobile:focus::before,
   .is-tooltip-right-mobile:hover::before,
   .is-tooltip-right-mobile.is-tooltip-active::before {
-    transform: translate(0.5rem, 50%) !important;
+    -webkit-transform: translate(0.5rem, 50%) !important;
+            transform: translate(0.5rem, 50%) !important;
   }
 }
 
@@ -31046,7 +31142,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: 50% !important;
     left: 100% !important;
     right: auto !important;
-    transform: translate(-1rem, 50%) !important;
+    -webkit-transform: translate(-1rem, 50%) !important;
+            transform: translate(-1rem, 50%) !important;
   }
 
   .is-tooltip-right-tablet:focus:not(.is-loading)::after,
@@ -31061,7 +31158,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-right-tablet:focus::before,
   .is-tooltip-right-tablet:hover::before,
   .is-tooltip-right-tablet.is-tooltip-active::before {
-    transform: translate(0.5rem, 50%) !important;
+    -webkit-transform: translate(0.5rem, 50%) !important;
+            transform: translate(0.5rem, 50%) !important;
   }
 }
 
@@ -31071,7 +31169,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: 50% !important;
     left: 100% !important;
     right: auto !important;
-    transform: translate(-1rem, 50%) !important;
+    -webkit-transform: translate(-1rem, 50%) !important;
+            transform: translate(-1rem, 50%) !important;
   }
 
   .is-tooltip-right-tablet-only:focus:not(.is-loading)::after,
@@ -31086,7 +31185,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-right-tablet-only:focus::before,
   .is-tooltip-right-tablet-only:hover::before,
   .is-tooltip-right-tablet-only.is-tooltip-active::before {
-    transform: translate(0.5rem, 50%) !important;
+    -webkit-transform: translate(0.5rem, 50%) !important;
+            transform: translate(0.5rem, 50%) !important;
   }
 }
 
@@ -31096,7 +31196,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: 50% !important;
     left: 100% !important;
     right: auto !important;
-    transform: translate(-1rem, 50%) !important;
+    -webkit-transform: translate(-1rem, 50%) !important;
+            transform: translate(-1rem, 50%) !important;
   }
 
   .is-tooltip-right-touch:focus:not(.is-loading)::after,
@@ -31111,7 +31212,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-right-touch:focus::before,
   .is-tooltip-right-touch:hover::before,
   .is-tooltip-right-touch.is-tooltip-active::before {
-    transform: translate(0.5rem, 50%) !important;
+    -webkit-transform: translate(0.5rem, 50%) !important;
+            transform: translate(0.5rem, 50%) !important;
   }
 }
 
@@ -31121,7 +31223,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: 50% !important;
     left: 100% !important;
     right: auto !important;
-    transform: translate(-1rem, 50%) !important;
+    -webkit-transform: translate(-1rem, 50%) !important;
+            transform: translate(-1rem, 50%) !important;
   }
 
   .is-tooltip-right-desktop:focus:not(.is-loading)::after,
@@ -31136,7 +31239,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-right-desktop:focus::before,
   .is-tooltip-right-desktop:hover::before,
   .is-tooltip-right-desktop.is-tooltip-active::before {
-    transform: translate(0.5rem, 50%) !important;
+    -webkit-transform: translate(0.5rem, 50%) !important;
+            transform: translate(0.5rem, 50%) !important;
   }
 }
 
@@ -31146,7 +31250,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: 50% !important;
     left: 100% !important;
     right: auto !important;
-    transform: translate(-1rem, 50%) !important;
+    -webkit-transform: translate(-1rem, 50%) !important;
+            transform: translate(-1rem, 50%) !important;
   }
 
   .is-tooltip-right-desktop-only:focus:not(.is-loading)::after,
@@ -31161,7 +31266,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-right-desktop-only:focus::before,
   .is-tooltip-right-desktop-only:hover::before,
   .is-tooltip-right-desktop-only.is-tooltip-active::before {
-    transform: translate(0.5rem, 50%) !important;
+    -webkit-transform: translate(0.5rem, 50%) !important;
+            transform: translate(0.5rem, 50%) !important;
   }
 }
 
@@ -31171,7 +31277,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: 50% !important;
     left: 100% !important;
     right: auto !important;
-    transform: translate(-1rem, 50%) !important;
+    -webkit-transform: translate(-1rem, 50%) !important;
+            transform: translate(-1rem, 50%) !important;
   }
 
   .is-tooltip-right-widescreen:focus:not(.is-loading)::after,
@@ -31186,7 +31293,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-right-widescreen:focus::before,
   .is-tooltip-right-widescreen:hover::before,
   .is-tooltip-right-widescreen.is-tooltip-active::before {
-    transform: translate(0.5rem, 50%) !important;
+    -webkit-transform: translate(0.5rem, 50%) !important;
+            transform: translate(0.5rem, 50%) !important;
   }
 }
 
@@ -31196,7 +31304,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: 50% !important;
     left: 100% !important;
     right: auto !important;
-    transform: translate(-1rem, 50%) !important;
+    -webkit-transform: translate(-1rem, 50%) !important;
+            transform: translate(-1rem, 50%) !important;
   }
 
   .is-tooltip-right-widescreen-only:focus:not(.is-loading)::after,
@@ -31211,7 +31320,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-right-widescreen-only:focus::before,
   .is-tooltip-right-widescreen-only:hover::before,
   .is-tooltip-right-widescreen-only.is-tooltip-active::before {
-    transform: translate(0.5rem, 50%) !important;
+    -webkit-transform: translate(0.5rem, 50%) !important;
+            transform: translate(0.5rem, 50%) !important;
   }
 }
 
@@ -31221,7 +31331,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: 50% !important;
     left: 100% !important;
     right: auto !important;
-    transform: translate(-1rem, 50%) !important;
+    -webkit-transform: translate(-1rem, 50%) !important;
+            transform: translate(-1rem, 50%) !important;
   }
 
   .is-tooltip-right-fullhd:focus:not(.is-loading)::after,
@@ -31236,7 +31347,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-right-fullhd:focus::before,
   .is-tooltip-right-fullhd:hover::before,
   .is-tooltip-right-fullhd.is-tooltip-active::before {
-    transform: translate(0.5rem, 50%) !important;
+    -webkit-transform: translate(0.5rem, 50%) !important;
+            transform: translate(0.5rem, 50%) !important;
   }
 }
 
@@ -31246,7 +31358,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: auto !important;
     left: 50% !important;
     right: auto !important;
-    transform: translate(-50%, -1rem) !important;
+    -webkit-transform: translate(-50%, -1rem) !important;
+            transform: translate(-50%, -1rem) !important;
   }
 
   .is-tooltip-bottom-mobile:focus:not(.is-loading)::after,
@@ -31262,7 +31375,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-bottom-mobile:focus::before,
   .is-tooltip-bottom-mobile:hover::before,
   .is-tooltip-bottom-mobile.is-tooltip-active::before {
-    transform: translate(-50%, 0.5rem) !important;
+    -webkit-transform: translate(-50%, 0.5rem) !important;
+            transform: translate(-50%, 0.5rem) !important;
   }
 }
 
@@ -31272,7 +31386,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: auto !important;
     left: 50% !important;
     right: auto !important;
-    transform: translate(-50%, -1rem) !important;
+    -webkit-transform: translate(-50%, -1rem) !important;
+            transform: translate(-50%, -1rem) !important;
   }
 
   .is-tooltip-bottom-tablet:focus:not(.is-loading)::after,
@@ -31288,7 +31403,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-bottom-tablet:focus::before,
   .is-tooltip-bottom-tablet:hover::before,
   .is-tooltip-bottom-tablet.is-tooltip-active::before {
-    transform: translate(-50%, 0.5rem) !important;
+    -webkit-transform: translate(-50%, 0.5rem) !important;
+            transform: translate(-50%, 0.5rem) !important;
   }
 }
 
@@ -31298,7 +31414,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: auto !important;
     left: 50% !important;
     right: auto !important;
-    transform: translate(-50%, -1rem) !important;
+    -webkit-transform: translate(-50%, -1rem) !important;
+            transform: translate(-50%, -1rem) !important;
   }
 
   .is-tooltip-bottom-tablet-only:focus:not(.is-loading)::after,
@@ -31314,7 +31431,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-bottom-tablet-only:focus::before,
   .is-tooltip-bottom-tablet-only:hover::before,
   .is-tooltip-bottom-tablet-only.is-tooltip-active::before {
-    transform: translate(-50%, 0.5rem) !important;
+    -webkit-transform: translate(-50%, 0.5rem) !important;
+            transform: translate(-50%, 0.5rem) !important;
   }
 }
 
@@ -31324,7 +31442,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: auto !important;
     left: 50% !important;
     right: auto !important;
-    transform: translate(-50%, -1rem) !important;
+    -webkit-transform: translate(-50%, -1rem) !important;
+            transform: translate(-50%, -1rem) !important;
   }
 
   .is-tooltip-bottom-touch:focus:not(.is-loading)::after,
@@ -31340,7 +31459,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-bottom-touch:focus::before,
   .is-tooltip-bottom-touch:hover::before,
   .is-tooltip-bottom-touch.is-tooltip-active::before {
-    transform: translate(-50%, 0.5rem) !important;
+    -webkit-transform: translate(-50%, 0.5rem) !important;
+            transform: translate(-50%, 0.5rem) !important;
   }
 }
 
@@ -31350,7 +31470,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: auto !important;
     left: 50% !important;
     right: auto !important;
-    transform: translate(-50%, -1rem) !important;
+    -webkit-transform: translate(-50%, -1rem) !important;
+            transform: translate(-50%, -1rem) !important;
   }
 
   .is-tooltip-bottom-desktop:focus:not(.is-loading)::after,
@@ -31366,7 +31487,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-bottom-desktop:focus::before,
   .is-tooltip-bottom-desktop:hover::before,
   .is-tooltip-bottom-desktop.is-tooltip-active::before {
-    transform: translate(-50%, 0.5rem) !important;
+    -webkit-transform: translate(-50%, 0.5rem) !important;
+            transform: translate(-50%, 0.5rem) !important;
   }
 }
 
@@ -31376,7 +31498,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: auto !important;
     left: 50% !important;
     right: auto !important;
-    transform: translate(-50%, -1rem) !important;
+    -webkit-transform: translate(-50%, -1rem) !important;
+            transform: translate(-50%, -1rem) !important;
   }
 
   .is-tooltip-bottom-desktop-only:focus:not(.is-loading)::after,
@@ -31392,7 +31515,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-bottom-desktop-only:focus::before,
   .is-tooltip-bottom-desktop-only:hover::before,
   .is-tooltip-bottom-desktop-only.is-tooltip-active::before {
-    transform: translate(-50%, 0.5rem) !important;
+    -webkit-transform: translate(-50%, 0.5rem) !important;
+            transform: translate(-50%, 0.5rem) !important;
   }
 }
 
@@ -31402,7 +31526,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: auto !important;
     left: 50% !important;
     right: auto !important;
-    transform: translate(-50%, -1rem) !important;
+    -webkit-transform: translate(-50%, -1rem) !important;
+            transform: translate(-50%, -1rem) !important;
   }
 
   .is-tooltip-bottom-widescreen:focus:not(.is-loading)::after,
@@ -31418,7 +31543,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-bottom-widescreen:focus::before,
   .is-tooltip-bottom-widescreen:hover::before,
   .is-tooltip-bottom-widescreen.is-tooltip-active::before {
-    transform: translate(-50%, 0.5rem) !important;
+    -webkit-transform: translate(-50%, 0.5rem) !important;
+            transform: translate(-50%, 0.5rem) !important;
   }
 }
 
@@ -31428,7 +31554,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: auto !important;
     left: 50% !important;
     right: auto !important;
-    transform: translate(-50%, -1rem) !important;
+    -webkit-transform: translate(-50%, -1rem) !important;
+            transform: translate(-50%, -1rem) !important;
   }
 
   .is-tooltip-bottom-widescreen-only:focus:not(.is-loading)::after,
@@ -31444,7 +31571,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-bottom-widescreen-only:focus::before,
   .is-tooltip-bottom-widescreen-only:hover::before,
   .is-tooltip-bottom-widescreen-only.is-tooltip-active::before {
-    transform: translate(-50%, 0.5rem) !important;
+    -webkit-transform: translate(-50%, 0.5rem) !important;
+            transform: translate(-50%, 0.5rem) !important;
   }
 }
 
@@ -31454,7 +31582,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: auto !important;
     left: 50% !important;
     right: auto !important;
-    transform: translate(-50%, -1rem) !important;
+    -webkit-transform: translate(-50%, -1rem) !important;
+            transform: translate(-50%, -1rem) !important;
   }
 
   .is-tooltip-bottom-fullhd:focus:not(.is-loading)::after,
@@ -31470,7 +31599,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-bottom-fullhd:focus::before,
   .is-tooltip-bottom-fullhd:hover::before,
   .is-tooltip-bottom-fullhd.is-tooltip-active::before {
-    transform: translate(-50%, 0.5rem) !important;
+    -webkit-transform: translate(-50%, 0.5rem) !important;
+            transform: translate(-50%, 0.5rem) !important;
   }
 }
 
@@ -31480,7 +31610,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: 50% !important;
     left: auto !important;
     right: 100% !important;
-    transform: translate(1rem, 50%) !important;
+    -webkit-transform: translate(1rem, 50%) !important;
+            transform: translate(1rem, 50%) !important;
   }
 
   .is-tooltip-left-mobile:focus:not(.is-loading)::after,
@@ -31496,7 +31627,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-left-mobile:focus::before,
   .is-tooltip-left-mobile:hover::before,
   .is-tooltip-left-mobile.is-tooltip-active::before {
-    transform: translate(-0.5rem, 50%) !important;
+    -webkit-transform: translate(-0.5rem, 50%) !important;
+            transform: translate(-0.5rem, 50%) !important;
   }
 }
 
@@ -31506,7 +31638,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: 50% !important;
     left: auto !important;
     right: 100% !important;
-    transform: translate(1rem, 50%) !important;
+    -webkit-transform: translate(1rem, 50%) !important;
+            transform: translate(1rem, 50%) !important;
   }
 
   .is-tooltip-left-tablet:focus:not(.is-loading)::after,
@@ -31522,7 +31655,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-left-tablet:focus::before,
   .is-tooltip-left-tablet:hover::before,
   .is-tooltip-left-tablet.is-tooltip-active::before {
-    transform: translate(-0.5rem, 50%) !important;
+    -webkit-transform: translate(-0.5rem, 50%) !important;
+            transform: translate(-0.5rem, 50%) !important;
   }
 }
 
@@ -31532,7 +31666,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: 50% !important;
     left: auto !important;
     right: 100% !important;
-    transform: translate(1rem, 50%) !important;
+    -webkit-transform: translate(1rem, 50%) !important;
+            transform: translate(1rem, 50%) !important;
   }
 
   .is-tooltip-left-tablet-only:focus:not(.is-loading)::after,
@@ -31548,7 +31683,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-left-tablet-only:focus::before,
   .is-tooltip-left-tablet-only:hover::before,
   .is-tooltip-left-tablet-only.is-tooltip-active::before {
-    transform: translate(-0.5rem, 50%) !important;
+    -webkit-transform: translate(-0.5rem, 50%) !important;
+            transform: translate(-0.5rem, 50%) !important;
   }
 }
 
@@ -31558,7 +31694,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: 50% !important;
     left: auto !important;
     right: 100% !important;
-    transform: translate(1rem, 50%) !important;
+    -webkit-transform: translate(1rem, 50%) !important;
+            transform: translate(1rem, 50%) !important;
   }
 
   .is-tooltip-left-touch:focus:not(.is-loading)::after,
@@ -31574,7 +31711,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-left-touch:focus::before,
   .is-tooltip-left-touch:hover::before,
   .is-tooltip-left-touch.is-tooltip-active::before {
-    transform: translate(-0.5rem, 50%) !important;
+    -webkit-transform: translate(-0.5rem, 50%) !important;
+            transform: translate(-0.5rem, 50%) !important;
   }
 }
 
@@ -31584,7 +31722,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: 50% !important;
     left: auto !important;
     right: 100% !important;
-    transform: translate(1rem, 50%) !important;
+    -webkit-transform: translate(1rem, 50%) !important;
+            transform: translate(1rem, 50%) !important;
   }
 
   .is-tooltip-left-desktop:focus:not(.is-loading)::after,
@@ -31600,7 +31739,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-left-desktop:focus::before,
   .is-tooltip-left-desktop:hover::before,
   .is-tooltip-left-desktop.is-tooltip-active::before {
-    transform: translate(-0.5rem, 50%) !important;
+    -webkit-transform: translate(-0.5rem, 50%) !important;
+            transform: translate(-0.5rem, 50%) !important;
   }
 }
 
@@ -31610,7 +31750,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: 50% !important;
     left: auto !important;
     right: 100% !important;
-    transform: translate(1rem, 50%) !important;
+    -webkit-transform: translate(1rem, 50%) !important;
+            transform: translate(1rem, 50%) !important;
   }
 
   .is-tooltip-left-desktop-only:focus:not(.is-loading)::after,
@@ -31626,7 +31767,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-left-desktop-only:focus::before,
   .is-tooltip-left-desktop-only:hover::before,
   .is-tooltip-left-desktop-only.is-tooltip-active::before {
-    transform: translate(-0.5rem, 50%) !important;
+    -webkit-transform: translate(-0.5rem, 50%) !important;
+            transform: translate(-0.5rem, 50%) !important;
   }
 }
 
@@ -31636,7 +31778,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: 50% !important;
     left: auto !important;
     right: 100% !important;
-    transform: translate(1rem, 50%) !important;
+    -webkit-transform: translate(1rem, 50%) !important;
+            transform: translate(1rem, 50%) !important;
   }
 
   .is-tooltip-left-widescreen:focus:not(.is-loading)::after,
@@ -31652,7 +31795,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-left-widescreen:focus::before,
   .is-tooltip-left-widescreen:hover::before,
   .is-tooltip-left-widescreen.is-tooltip-active::before {
-    transform: translate(-0.5rem, 50%) !important;
+    -webkit-transform: translate(-0.5rem, 50%) !important;
+            transform: translate(-0.5rem, 50%) !important;
   }
 }
 
@@ -31662,7 +31806,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: 50% !important;
     left: auto !important;
     right: 100% !important;
-    transform: translate(1rem, 50%) !important;
+    -webkit-transform: translate(1rem, 50%) !important;
+            transform: translate(1rem, 50%) !important;
   }
 
   .is-tooltip-left-widescreen-only:focus:not(.is-loading)::after,
@@ -31678,7 +31823,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-left-widescreen-only:focus::before,
   .is-tooltip-left-widescreen-only:hover::before,
   .is-tooltip-left-widescreen-only.is-tooltip-active::before {
-    transform: translate(-0.5rem, 50%) !important;
+    -webkit-transform: translate(-0.5rem, 50%) !important;
+            transform: translate(-0.5rem, 50%) !important;
   }
 }
 
@@ -31688,7 +31834,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
     bottom: 50% !important;
     left: auto !important;
     right: 100% !important;
-    transform: translate(1rem, 50%) !important;
+    -webkit-transform: translate(1rem, 50%) !important;
+            transform: translate(1rem, 50%) !important;
   }
 
   .is-tooltip-left-fullhd:focus:not(.is-loading)::after,
@@ -31704,7 +31851,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   .is-tooltip-left-fullhd:focus::before,
   .is-tooltip-left-fullhd:hover::before,
   .is-tooltip-left-fullhd.is-tooltip-active::before {
-    transform: translate(-0.5rem, 50%) !important;
+    -webkit-transform: translate(-0.5rem, 50%) !important;
+            transform: translate(-0.5rem, 50%) !important;
   }
 }
 

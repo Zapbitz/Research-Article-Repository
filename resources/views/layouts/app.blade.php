@@ -16,52 +16,8 @@
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     </head>
     <body>
-        <div id="app">
-            <!-- <nav class="navbar has-shadow">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <a href="{{ url('/') }}" class="navbar-item">{{ config('app.name', 'Laravel') }}</a>
+        <div >
 
-                        <div class="navbar-burger burger" data-target="navMenu">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-
-                    <div class="navbar-menu" id="navMenu">
-                        <div class="navbar-start"></div>
-
-                        <div class="navbar-end">
-                            @if (Auth::guest())
-                                <a class="navbar-item " href="{{ route('login') }}">Login</a>
-                                <a class="navbar-item " href="{{ route('register') }}">Register</a>
-                            @else
-                                <div class="navbar-item has-dropdown is-hoverable">
-                                        
-                                    <a class="navbar-link" href="#">{{ Auth::user()->name }}
-                                            <figure class="image is-32x32">
-                                                    <img class="is-rounded" src="https://ui-avatars.com/api/{{ Auth::user()->name }}">
-                                            </figure>
-                                    </a>
-                                    
-                                    <div class="navbar-dropdown">
-                                        <a class="navbar-item" href="{{ route('logout') }}"
-                                           onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-                                            Logout
-                                        </a>
-
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                              style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
-                                    </div>
-                                </div>
-                            @endif
-                        </div>
-                    </div>
-                </div>
-            </nav> -->
             <nav class="navbar" role="navigation" aria-label="main navigation">
                 <div class="container">
                     <div class="navbar-brand">
@@ -74,12 +30,29 @@
                         <div class="navbar-end">
                             <div class="navbar-item">
                                 <div class="buttons">
-                                <a class="button orange">
-                                    <strong>Sign up</strong>
-                                </a>
-                                <a class="button is-light">
-                                    Log in
-                                </a>
+                                @if (Auth::guest())       
+                                    <a class="button orange" href="{{ route('register') }}">
+                                        <strong>Sign up</strong>
+                                    </a>
+                                    <a class="button is-light" href="{{ route('login') }}">
+                                        Log in
+                                    </a>
+                                @else
+                                    <a class="navbar-link" href="#">{{ Auth::user()->name }}
+                                            <figure class="image is-32x32" style="margin-left:.8rem;">
+                                                    <img class="is-rounded" src="https://ui-avatars.com/api/{{ Auth::user()->name }}">
+                                            </figure>
+                                    </a>
+                                    <div class="navbar-dropdown">
+                                        <a class="navbar-item" href="{{ route('logout') }}"
+                                        onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                            style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                @endif
                                 </div>
                             </div>
                         </div>
@@ -91,10 +64,6 @@
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}"></script>
-        <script type="text/javascript">
-            var date = new bulmaCalendar(document.querySelector('.calendar'), {
-              dataFormat: 'd MM yyyy' // 1 January 2018
-            });
-    </script>
+        @yield('scripts');
     </body>
 </html>

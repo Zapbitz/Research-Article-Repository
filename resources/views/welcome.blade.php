@@ -98,10 +98,10 @@
                     <div class="navbar-end">
                         <div class="navbar-item">
                             <div class="buttons">
-                            <a class="button orange">
+                            <a class="button orange" href="/register">
                                 <strong>Sign up</strong>
                             </a>
-                            <a class="button is-light">
+                            <a class="button is-light" href="/login">
                                 Log in
                             </a>
                             </div>
@@ -124,17 +124,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
-                </div>
-            @endif
-        </div> -->
+
     </body>
 </html>
